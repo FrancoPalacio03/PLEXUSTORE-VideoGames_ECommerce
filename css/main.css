@@ -1,0 +1,157 @@
+
+
+:root {
+  --primary: #a5a5a5de;
+  --secondary: #000000;
+  --terciary: #626262a7;
+  --cuartiary: #1F1F1F;
+  --quintary: #ff0303;
+}
+
+body{
+  background-color:  var(--cuartiary);
+  font-family: "Lato", sans-serif;
+  color: var(--primary);
+  padding:0;
+  margin: 0;
+}
+
+main {
+  padding-top: 8%;
+}
+
+header{
+  position: fixed;
+  z-index: 1000; 
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary);
+  color: var(--primary); 
+}
+
+#navbar-container {
+  height: 100px;
+  display: flex;
+  align-items: center; 
+  margin: 0 10%;
+}
+
+#shop-logo img {
+  width: 15%;
+}
+
+#shop-title h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 30px;
+  padding-left: 150px;
+  color: white;
+  margin: 0; 
+}
+
+#page-content-wrapper {
+  margin: 0 10% 10%;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-container {
+  width: 275px;
+}
+
+#categories{
+  margin-right:100%;
+  padding-left: 10%;
+}
+
+#categories button{
+  font-family: "Lato", system-ui;
+  color: var(--primary);
+  margin-top: 5px;
+  border-radius: 7px;
+  width: 200px;
+  height: 60px;
+  font-size: 22px;
+  border: none;
+  background: none;
+}
+
+.all-btn{
+  background:var(--terciary) !important;
+}
+
+#categories button:hover{
+  background:var(--terciary);
+}
+
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-category{
+  display: flex;
+  padding: 5%;
+}
+
+.card img{
+ max-width: 100%;
+ border-radius: 7px;
+}
+
+.zoom-image {
+  transition: transform 0.4s ease; 
+}
+
+.zoom-image:hover {
+  transform: scale(1.055); 
+}
+
+.card h4 {
+  margin-top: 2%;
+  max-width: 250px;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+
+.game-info{
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  margin: 0;
+  width: 100%;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+#footer-container{
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-between;
+}
+
+.comment-input{
+  padding-bottom: 5%;
+}
+
+#footer-container input{
+  background-color: var(--secondary);
+  border: none;
+}
+
+#footer-container textarea{
+  background-color: var(--secondary);
+}
+
